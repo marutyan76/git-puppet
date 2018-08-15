@@ -1,15 +1,8 @@
-node 'webdav1.ma.local' {
-    include httpd
+filebucket { "main":
+   server => "git-puppet.ma.local",
+   path => false,
 }
 
-node 'webdav2' {
-    include httpd
-}
-
-node 'ppms.ma.local' {
-    include httpd
-}
-
-node 'webdav3' {
+node webdav6 {
     include httpd
 }
