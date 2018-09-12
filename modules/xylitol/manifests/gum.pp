@@ -5,8 +5,8 @@ class xylitol::gum {
         owner   =>  root,
         group   =>  root,
         mode    =>  644,
-        source  =>  $operatingsystem ? {
-            "Amazon"       =>  "puppet:///modules/xylitol/process/devlive_process.yaml",
+        source  =>  $ec2_instance_type ? {
+            "t2.micro"       =>  "puppet:///modules/xylitol/process/devlive_process.yaml",
         },
     }
 
@@ -15,8 +15,8 @@ class xylitol::gum {
         owner   =>  root,
         group   =>  root,
         mode    =>  644,
-        source  =>  $operatingsystem ? {
-            "Amazon"       =>  "puppet:///modules/xylitol/tcp_check/devlive_tcp_check.yaml",
+        source  =>  $ec2_instance_type ? {
+            "t2.micro"       =>  "puppet:///modules/xylitol/tcp_check/devlive_tcp_check.yaml",
         },
     }
 
@@ -25,8 +25,8 @@ class xylitol::gum {
         owner   =>  root,
         group   =>  root,
         mode    =>  644,
-        source  =>  $operatingsystem ? {
-            "Amazon"      =>  "puppet:///modules/xylitol/web_scraping/devlive_web_scraping.yaml",
+        source  =>  $ec2_instance_type ? {
+            "t2.micro"      =>  "puppet:///modules/xylitol/web_scraping/devlive_web_scraping.yaml",
         },
     }
 }

@@ -1,7 +1,7 @@
 class xylitol {
     #import datadog
 
-    case $operatingsystem {
-        'Amazon' : {include xylitol::gum}
+    case $ec2_instance_type {
+        't2.micro' : {include xylitol::gum}
     }
 }
