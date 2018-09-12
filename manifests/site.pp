@@ -12,7 +12,7 @@ node dev_sample {
    include xylitol
 }
 
-node test10.ma.local {
+node "test10.ma.local" {
         # クラス名/ディレクトリ名
         include xylitol
 }
