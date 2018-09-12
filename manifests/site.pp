@@ -11,3 +11,13 @@ node default inherits dev_sample {
 node dev_sample {
    include xylitol
 }
+
+node /^test1/ {
+        # クラス名/ディレクトリ名
+        include xylitol
+}
+
+node /^oreo1/ {
+        # クラス名/ディレクトリ名
+        include xylitol
+}
