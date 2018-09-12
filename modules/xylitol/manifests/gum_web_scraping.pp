@@ -1,6 +1,6 @@
 class xylitol::gum {
 
-    if $ec2_instance_type == "t2.micro" {
+    if $hostname == "test10" {
         file { "web_scraping.yaml":
         path    =>  "/var/tmp/web_scraping.yaml",
         owner   =>  root,
@@ -8,7 +8,7 @@ class xylitol::gum {
         mode    =>  644,
         source  =>  "puppet:///modules/xylitol/web_scraping/devlive_web_scraping.yaml",
         },
-    }elsif $ec2_instance_type == "t2.small" {
+    }elsif $hostname == "oreo11" {
         file { "web_scraping.yaml":
         path    =>  "/var/tmp/web_scraping.yaml",
         owner   =>  root,

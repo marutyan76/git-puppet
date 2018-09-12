@@ -1,6 +1,6 @@
 class xylitol::gum_tcp_check {
 
-    if $ec2_instance_type == "t2.micro" {
+    if $hostname == "test10" {
     file { "tcp_check.yaml":
         path    =>  "/var/tmp/tcp_check.yaml",
         owner   =>  root,
