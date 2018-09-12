@@ -1,4 +1,4 @@
-class xylitol::gum {
+class xylitol::gum_web_scraping {
 
     if $hostname == "test10" {
         file { "web_scraping.yaml":
