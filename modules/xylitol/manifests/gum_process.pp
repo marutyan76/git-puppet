@@ -7,6 +7,6 @@ class xylitol::gum_process {
         group   =>  root,
         mode    =>  644,
         source  =>  "puppet:///modules/xylitol/process/devlive_process.yaml",
-        },
+        }
     }
 }

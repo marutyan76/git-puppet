@@ -7,6 +7,6 @@ class xylitol::gum_tcp_check {
         group   =>  root,
         mode    =>  644,
         source  =>  "puppet:///modules/xylitol/tcp_check/devlive_tcp_check.yaml",
-        },
+        }
     }
 }
