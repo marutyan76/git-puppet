@@ -1,0 +1,10 @@
+init_config:
+#   min_collection_interval: 300
+   min_collection_interval: 1800
+
+instances:
+
+   - name: live_streams
+     url: http://localhost:11080/stat
+#     xpath: //*/body/table/tbody/tr[4]/td[1]/text()
+     xpath: //rtmp/server/application/live/nclients/text()

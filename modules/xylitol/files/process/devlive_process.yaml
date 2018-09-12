@@ -1,0 +1,8 @@
+init_config:
+
+instances:
+
+- name: streampack_nginx_worker
+  search_string: ['nginx: worker process']
+  ignore_denied_access: True
+  exact_match: False

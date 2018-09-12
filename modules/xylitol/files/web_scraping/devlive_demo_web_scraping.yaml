@@ -1,0 +1,15 @@
+init_config:
+
+   min_collection_interval: 1800
+
+instances:
+
+   - name: puppet_failed
+     url: http://puppetserver.ma.local/
+     xpath: //*[@id="sidebar"]/div[2]/div[1]/table/tr[2]/td[1]/a/text()
+   - name: puppet_unresponsive
+     url: http://puppetserver.ma.local/
+     xpath: //*[@id="sidebar"]/div[2]/div[1]/table/tr[1]/td[1]/a/text()
+   - name: puppet_changed
+     url: http://puppetserver.ma.local/
+     xpath: //*[@id="sidebar"]/div[2]/div[1]/table/tr[4]/td[1]/a/text()
