@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class datadog::gum {
+class xylitol::gum {
 
     file { "process.yaml" :
         path    =>  "/tmp/oreo/conf.d/process.yaml",
