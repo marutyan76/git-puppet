@@ -1,16 +1,3 @@
-# Class:  datadog::dev_streampack
-#
-# This module manages datadog
-#
-# Parameters:
-#
-# Actions:
-#
-# Requires:httpd /etc/system_role
-#
-# Sample Usage:
-#
-# [Remember: No empty lines between comments and class definition]
 class xylitol::gum {
 
     file { "process.yaml" :
