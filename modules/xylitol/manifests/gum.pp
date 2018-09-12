@@ -1,9 +1,9 @@
 class xylitol::gum {
 
     file { "process.yaml" :
-        path    =>  "/tmp/oreo/conf.d/process.yaml",
-        owner   =>  ec2-user,
-        group   =>  ec2-user,
+        path    =>  "/var/tmp/process.yaml",
+        owner   =>  root,
+        group   =>  root,
         mode    =>  644,
         source  =>  $system_role ? {
             "AWS_test"       =>  "puppet::///modules/xylitol/process/devlive_process.yaml",
@@ -11,9 +11,9 @@ class xylitol::gum {
     }
 
     file { "tcp_check.yaml":
-        path    =>  "/tmp/oreo/agent/conf.d/tcp_check.yaml",
-        owner   =>  ec2-user,
-        group   =>  ec2-user,
+        path    =>  "/var/tmp/conf.d/tcp_check.yaml",
+        owner   =>  root,
+        group   =>  root,
         mode    =>  644,
         source  =>  $system_role ? {
             "AWS_test"       =>  "puppet::///modules/xylitol/tcp_check/devlive_tcp_check.yaml",
@@ -21,9 +21,9 @@ class xylitol::gum {
     }
 
     file { "web_scraping.yaml":
-        path    =>  "/tmp/oreo/agent/conf.d/web_scraping.yaml",
-        owner   =>  ec2-user,
-        group   =>  ec2-user,
+        path    =>  "/var/tmp/web_scraping.yaml",
+        owner   =>  root,
+        group   =>  root,
         mode    =>  644,
         source  =>  $system_role ? {
             "AWS_test"      =>  "puppet::///modules/xylitol/web_scraping/devlive_web_scraping.yaml",
